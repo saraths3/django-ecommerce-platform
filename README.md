@@ -1,42 +1,50 @@
-
 # Django E-Commerce Platform
 
-A Django-based e-commerce platform developed to demonstrate session management, CRUD operations, and RESTful API development using Django REST Framework.
+A full-featured e-commerce platform built with Django and Django REST Framework. The project demonstrates session management, CRUD operations, database relationships, and RESTful API development in a practical web application.
+
+---
+
+## Overview
+
+This project was developed as part of an academic assignment to explore core Django concepts, including:
+
+* Session Management
+* CRUD Operations
+* Database Modeling
+* User Management
+* REST API Development
+* Django Administration
+
+The application provides product management, order processing, user profile management, shopping cart functionality, and API access for products and orders.
+
+---
 
 ## Features
 
-* Product management (Create, Read, Update, Delete)
-* User profile management
-* Order management
-* Shopping cart using Django sessions
-* Recently viewed products using Django sessions
-* RESTful API for products
-* RESTful API for orders
-* Django admin integration
+| Feature                  | Description                               |
+| ------------------------ | ----------------------------------------- |
+| Product Management       | Create, view, update, and delete products |
+| User Profiles            | Manage customer profile information       |
+| Order Management         | Create and manage customer orders         |
+| Shopping Cart            | Session-based cart functionality          |
+| Recently Viewed Products | Session-based product history             |
+| REST API                 | Product and order API endpoints           |
+| Admin Panel              | Built-in Django administration support    |
 
-## Technologies Used
+---
 
-| Technology            | Purpose             |
-| --------------------- | ------------------- |
-| Python                | Backend development |
-| Django                | Web framework       |
-| Django REST Framework | API development     |
-| SQLite                | Database            |
-| HTML                  | Frontend templates  |
-| CSS                   | Styling             |
+## Technology Stack
 
-## Project Requirements
+| Technology            | Usage                |
+| --------------------- | -------------------- |
+| Python                | Programming Language |
+| Django                | Web Framework        |
+| Django REST Framework | API Development      |
+| SQLite                | Database             |
+| HTML                  | Templates            |
+| CSS                   | Frontend Styling     |
 
-| Requirement              | Status      |
-| ------------------------ | ----------- |
-| Product CRUD             | Implemented |
-| User Profile CRUD        | Implemented |
-| Order CRUD               | Implemented |
-| Shopping Cart Session    | Implemented |
-| Recently Viewed Products | Implemented |
-| Product API              | Implemented |
-| Order API                | Implemented |
-| Django Admin Support     | Implemented |
+---
 
 ## Installation
 
@@ -47,19 +55,23 @@ git clone https://github.com/YOUR_USERNAME/django-ecommerce-platform.git
 cd django-ecommerce-platform
 ```
 
-### Create and Activate a Virtual Environment
+### Create Virtual Environment
+
+```bash
+python -m venv .venv
+```
+
+### Activate Virtual Environment
 
 Linux/macOS:
 
 ```bash
-python -m venv .venv
 source .venv/bin/activate
 ```
 
 Windows:
 
 ```bash
-python -m venv .venv
 .venv\Scripts\activate
 ```
 
@@ -76,43 +88,74 @@ python manage.py makemigrations
 python manage.py migrate
 ```
 
-### Create an Admin User
+### Create Administrator Account
 
 ```bash
 python manage.py createsuperuser
 ```
 
-### Run the Development Server
+### Run Development Server
 
 ```bash
 python manage.py runserver
 ```
 
-The application will be available at:
+Open:
 
-```
+```text
 http://127.0.0.1:8000/
 ```
 
+---
+
 ## API Endpoints
 
-| Method | Endpoint                   | Description        |
-| ------ | -------------------------- | ------------------ |
-| GET    | /api/products/             | List all products  |
-| GET    | /api/products/<id>/        | Retrieve a product |
-| POST   | /api/products/add/         | Create a product   |
-| PUT    | /api/products/update/<id>/ | Update a product   |
-| DELETE | /api/products/delete/<id>/ | Delete a product   |
-| GET    | /api/orders/               | List all orders    |
-| GET    | /api/orders/<id>/          | Retrieve an order  |
-| POST   | /api/orders/add/           | Create an order    |
-| PUT    | /api/orders/update/<id>/   | Update an order    |
-| DELETE | /api/orders/delete/<id>/   | Delete an order    |
+### Products
 
-## Screenshots
+| Method | Endpoint                     |
+| ------ | ---------------------------- |
+| GET    | `/api/products/`             |
+| GET    | `/api/products/<id>/`        |
+| POST   | `/api/products/add/`         |
+| PUT    | `/api/products/update/<id>/` |
+| DELETE | `/api/products/delete/<id>/` |
 
-Screenshots can be added here after project completion.
+### Orders
+
+| Method | Endpoint                   |
+| ------ | -------------------------- |
+| GET    | `/api/orders/`             |
+| GET    | `/api/orders/<id>/`        |
+| POST   | `/api/orders/add/`         |
+| PUT    | `/api/orders/update/<id>/` |
+| DELETE | `/api/orders/delete/<id>/` |
+
+---
+
+## Project Status
+
+| Module             | Status   |
+| ------------------ | -------- |
+| Product CRUD       | Complete |
+| User Profile CRUD  | Complete |
+| Order CRUD         | Complete |
+| Session Management | Complete |
+| Product API        | Complete |
+| Order API          | Complete |
+
+---
+
+## Future Improvements
+
+* Authentication and authorization
+* Product categories
+* Search and filtering
+* Payment gateway integration
+* Order tracking
+* Product reviews and ratings
+
+---
 
 ## License
 
-This project was developed for educational purposes.
+This project was created for educational and learning purposes.
