@@ -50,11 +50,6 @@ The application provides product management, order processing, user profile mana
 
 ### Clone the Repository
 
-```bash
-git clone https://github.com/YOUR_USERNAME/django-ecommerce-platform.git
-cd django-ecommerce-platform
-```
-
 ### Create Virtual Environment
 
 ```bash
